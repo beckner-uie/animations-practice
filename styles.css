@@ -1,0 +1,89 @@
+div {
+  width: 100px;
+  height: 100px;
+}
+
+.box1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: lightcoral;
+  animation: circle1 4s linear 1 forwards;
+}
+.box2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: lightblue;
+  animation: circle2 4s linear 1 forwards;
+}
+.box3 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: lightgreen;
+  animation: circle3 4s linear 1 forwards;
+}
+.box4 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: lightgoldenrodyellow;
+  animation: circle4 4s linear 1 forwards;
+}
+
+@keyframes circle1 {
+  0% {
+    top: 0%;
+    left: 0%;
+    background-color: lightcoral;
+  }
+  100% {
+    top: 50%;
+    left: 50%;
+    background-color: black;
+    border-bottom-right-radius: 100%;
+  }
+}
+@keyframes circle2 {
+  0% {
+    top: 0%;
+    right: 0%;
+    background-color: lightblue;
+  }
+  100% {
+    top: 50%;
+    right: 50%;
+    background-color: black;
+    border-bottom-left-radius: 100%;
+  }
+}
+@keyframes circle3 {
+  0% {
+    bottom: 0%;
+    left: 0%;
+    background-color: lightgreen;
+  }
+  100% {
+    bottom: 50%;
+    left: 50%;
+    background-color: black;
+    border-top-right-radius: 100%;
+  }
+}
+@keyframes circle4 {
+  0% {
+    bottom: 0%;
+    right: 0%;
+    background-color: lightgoldenrodyellow;
+  }
+  100% {
+    bottom: 50%;
+    right: 50%;
+    background-color: black;
+    border-top-left-radius: 100%;
+  }
+}
+div:hover {
+    border: white solid 3px;
+}
